@@ -42,7 +42,7 @@ public class CountryController {
 	public Country addCountry(@RequestBody Country country) {
 		return countryService.addCountry(country);
 	}
-	@PutMapping("/updateCountry")
+	@PutMapping("/updateCountry/{id}")
 	public Country updateCountry(@RequestBody Country country) {    //
 		return countryService.updateCountry(country);
 	}
